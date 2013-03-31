@@ -18,7 +18,7 @@ Note: The following prerequisites are already installed in host system:
 
 ### Steps
 
-	git clone <GIT URL TO BE CLARIFIED> baseline-box
+	git clone https://github.com/jaromirmuller/baseline-box baseline-box
  	cd ./baseline-box
  	vagrant up
  	
