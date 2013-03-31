@@ -7,12 +7,6 @@ Provides basic SHELL + PUPPET recepies to install the following services
  * MongoDB
  * Redis
 
-NPM
- * supervisor - https://github.com/isaacs/node-supervisor 
-
-and in future likely much more.  
-
-
 ## Installation
 
 ### Prerequisites
