@@ -1,4 +1,4 @@
-# Baseline BOX stack builder
+# Baseline Vagrant box
 
 ## Description
 
@@ -40,7 +40,6 @@ Please free to request a support via github issues if you find any error.
  * Jaromir Muller (https://github.com/jaromirmuller)
 
 ## LICENSE
-
 
    Copyright 2013 Jaromír Müller
 
