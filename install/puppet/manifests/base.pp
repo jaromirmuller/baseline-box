@@ -39,13 +39,9 @@ node default {
 	  ]
 	}
 	
-	package { 'supervisor':
-		ensure   => latest,
-		provider => 'npm'
-	}
-	
 	## SOME OTHER USEFUL STAFF
 	package {'mc': }
 	package {'curl': }
+	package {'vim': }
 
 }
