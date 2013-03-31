@@ -21,6 +21,20 @@ node default {
 	}
 
 	class{'mongodb': }
+	file_line{ 'etc_mongodb_conf_bind_ip_0_0_0_0':
+	  ensure => 'present',
+	  path => '/etc/mongodb.conf',
+	  line => "bind_ip = 0.0.0.0",
+	  require => Class['mongodb'],
+	  notify  => Service["mongodb"]
+	}
+	file_line{ 'etc_mongodb_conf_bind_ip_not_127_0_0_1':
+	  ensure => 'absent',
+	  path => '/etc/mongodb.conf',
+	  line => "bind_ip = 127.0.0.1",
+	  require => Class['mongodb'],
+	  notify  => Service["mongodb"]
+	}
 	
 	package {'python': }
 	package {'g++': }
@@ -43,5 +57,7 @@ node default {
 	package {'mc': }
 	package {'curl': }
 	package {'vim': }
+	package {'git': }
+	package {'screen': }
 
 }
