@@ -25,14 +25,12 @@ node default {
 	  ensure => 'present',
 	  path => '/etc/mongodb.conf',
 	  line => "bind_ip = 0.0.0.0",
-	  require => Class['mongodb'],
 	  notify  => Service["mongodb"]
 	}
 	file_line{ 'etc_mongodb_conf_bind_ip_not_127_0_0_1':
 	  ensure => 'absent',
 	  path => '/etc/mongodb.conf',
 	  line => "bind_ip = 127.0.0.1",
-	  require => Class['mongodb'],
 	  notify  => Service["mongodb"]
 	}
 	
@@ -59,5 +57,12 @@ node default {
 	package {'vim': }
 	package {'git': }
 	package {'screen': }
+	
+	class {'googlechrome': 
+		package => 'google-chrome-stable',
+	}
+	
+	package {'xvfb': }
+	package {'imagemagick': }
 
 }
