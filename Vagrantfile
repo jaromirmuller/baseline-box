@@ -1,4 +1,4 @@
-# -*- mode: ruby -*-
+﻿# -*- mode: ruby -*-
 # vi: set ft=ruby :
 
 #   Copyright 2013 Jaromír Müller
@@ -64,6 +64,7 @@ Vagrant::Config.run do |config|
   
   #NODEJS
   config.vm.forward_port 3000, 3000
+  config.vm.forward_port 8000, 8000
   
   
 
