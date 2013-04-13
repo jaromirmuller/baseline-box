@@ -33,7 +33,7 @@ echo "Installation of puppet modules from forge.puppetlabs.com"
 puppet module install --debug --modulepath $PUPPET_MODULE_PATH puppetlabs-mongodb 
 puppet module install --debug --modulepath $PUPPET_MODULE_PATH willdurand-nodejs
 puppet module install --debug --modulepath $PUPPET_MODULE_PATH thomasvandoren-redis
-#puppet module install --debug --modulepath $PUPPET_MODULE_PATH smarchive-googlechrome
+# puppet module install --debug --modulepath $PUPPET_MODULE_PATH smarchive-googlechrome
 
 echo "Applying puppet manifests"
 cp -vR $HOME_STACK_INSTALL_PATH/puppet/manifests/* $PUPPET_MANIFESTS_PATH  
