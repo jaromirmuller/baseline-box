@@ -58,11 +58,11 @@ node default {
 	package {'git': }
 	package {'screen': }
 	
-	class {'googlechrome': 
-		package => 'google-chrome-stable',
-	}
+#	class {'googlechrome': 
+#		package => 'google-chrome-stable',
+#	}
 	
-	package {'xvfb': }
-	package {'imagemagick': }
+#	package {'xvfb': }
+#	package {'imagemagick': }
 
 }
